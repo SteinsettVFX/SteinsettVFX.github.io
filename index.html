@@ -16,6 +16,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#showreel">Showreel</a></li>
             <li><a href="#contacts">Contacts</a></li>
         </ul>
         </div>
@@ -32,6 +33,7 @@
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#showreel" onclick="toggleMenu()">Showreel</a></li>
             <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
         </div>
        </div>
@@ -46,7 +48,7 @@
             <p class="section__text__p2">Compositor</p>
             <div class="btn-container">
                 <button
-                class="btn btn-color-2"
+                class="btn btn-color-1"
                 onclick="window.open('./assets/CV_Viljam_Steinsett_Stroem_Junior_Compositor_27052024_v004.pdf')">
                 Download CV
             </button>
@@ -56,28 +58,59 @@
                 Contact info
             </button>
             </div>
-            <div id="socials-container">
-                <img 
-                src="./assets/linkedin.png"
-                alt="My LinkedIn profile"
-                class="icon"
-                onclick="location.href='https://www.linkedin.com/in/viljam-ss/'">
+             <div
+                class="btn-container-1">
                 <button
-                class="btn btn-color-1"
-                onclick="location.href='https://www.linkedin.com/in/viljam-ss/'">
+                class="btn-1 btn-color-1"
+                onclick="window.open('https://www.linkedin.com/in/viljam-ss/')">
                 LinkedIn
-            </button>
-                <img 
-                src="./assets/github.png"
-                alt="My github profile"
-                class="icon"
-                onclick="location.href='https://github.com/SteinsettVFX'">
+                </button>
                 <button
-                class="btn btn-color-1"
-                onclick="location.href='https://github.com/SteinsettVFX'">
+                class="btn-1 btn-color-1"
+                onclick="window.open('https://github.com/SteinsettVFX')">
                 Github
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know me</p>
+        <p class="section__text__p1">About Me</p>
+        <div class="section__container">
+            <div class="about-detailes-container">
+                <div class="about-containers">
+                    <div class="details-containe">
+                        <img src="./assets/education.png" alt="Experience icon"
+                        class="icon"
+                        >
+                        <h3>Experience</h3>
+                        <p>5+ years <br> of compositing</p>
+                    </div>
+                </div>
+                <div class="about-containers">
+                    <div class="detailes-container">
+                        <img src="./assets/experience.png" alt="Education icon"
+                        class="icon"
+                        >
+                        <h3>Education</h3>
+                        <p>B.Sc bachelors Degree <br> University of Bolton</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>HI, I am from Sandefjord. Norway, and study in the UK. I love tinkering with programs
+                        and computers. I enjoy both technical and artistic approaches to solving a challenge. Big
+                        fan of LOTR, drones, computers, and mountain hiking!
+                        </p>
+                </div>
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href'./#showreel'"
+        >
+    </section>
+    <section id="showreel">
+        <p class="section__text__p1">Showreel</p>
+        <iframe width="1280" height="720" class=playback-1"
+src="https://www.youtube.com/embed/uujR5Jjitdg?autoplay=1&mute=1">
+</iframe>
     </section>
     <script src="script.js"></script>
 </body>
