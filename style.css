@@ -211,7 +211,7 @@ section {
     margin-bottom: 0rem;
 }
 
-.section__text__p2 {
+.section__text__pt {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -261,7 +261,6 @@ section {
     border-radius: 0.7rem;
 }
 .btn-1 {
-
     font-size: 0.8rem;
     font-weight: 400;
     transition: all 300ms ease;
@@ -275,6 +274,7 @@ section {
     background: rgb(53, 53, 53);
     color: white;
 }
+
 .btn-color-1:hover{
     border: rgb(53, 53, 53) 0.1rem solid;
     background: rgb(253, 253, 253);
@@ -395,25 +395,27 @@ section {
     height: auto;
     width: auto;
     margin: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
 
-.projects-menu {
+.pictureinpictureboarder {
+    display: flex;
+    flex-direction: row;
+    gap: 49rem;
+}
+
+.nav-projects-bar {    
     position: relative;
     display: inline-block;
-}
-
-.nav-projects-sbar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: beige;
-    margin-right: 118rem;
     margin-left: 2rem;
     width: auto;
     height: auto;
     padding: 0.5rem;
-    width: 8rem;
+    width: auto;
     border-radius: 0.3rem;
     z-index: 1029;
 }
@@ -421,7 +423,9 @@ section {
 .nav-years-text {
     margin-left: 1rem;
     margin-top: 0.35rem;
-    cursor: pointer;
+    cursor: pointer;    
+    flex: content;
+    flex-direction: row;
 }
 
 .nav-projects-links
@@ -432,36 +436,45 @@ section {
     cursor: pointer;
 }
 
-.nav-projects-links a {
-    display: block;
+.nav-projects-links {
+    font-size: 1.1rem;
     margin-left: 2rem;
     text-align: left;
     color: black;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
     width: auto;
-    height: auto;
+    height: auto;    
+    text-underline-offset: 0;
+    text-decoration-color: rgb(185, 185, 185);
+}
+
+.nav-projects-links:hover {
+    border: none;
+    text-decoration: none;
 }
 
 .nav-projects-links li {
     list-style: none;
 }
 
-.nav-projects-links.expand {
-    max-height: 300px;
-}
-
 .titleabriv {
     margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.section__abbreviations__pt {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .abbreviations_container {
-    margin-left: 2rem;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    flex: content;
-    flex-direction: row;
+    font-size: 1.3rem;
+    border: 0;
+    margin: 0;
+    gap: 0.2rem;
+    justify-content: center;
 }
 
 .top_abbreviations_container {
@@ -470,10 +483,31 @@ section {
     width: auto;
     justify-content: center;
     flex-direction: row;
+    gap: 3rem;
 }
+
 .abbreviations_container,
 .top_abbreviations_container {
     display: flex;
+}
+
+.nav-projects-bar-text {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.collapsible {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: all 300ms ease;
+    margin-left: 1rem;
+    background: none;
+    border: none;    
+    cursor: pointer;
+}
+
+.picturesinpictures{
+    border: 10rem;
 }
 
 /* CONTACTS */

@@ -1,3 +1,19 @@
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+
+const hamburgernav = document.querySelector('#hamburger-nav');
+
+function showNav(){
+  hamburgernav.classList.add('show');
+}
+
+function hidewNav(){
+  hamburgernav.classList.remove('show');
+}
 
 var currPos = window.scrollY;
 document.addEventListener('scroll', () => {
@@ -11,19 +27,17 @@ document.addEventListener('scroll', () => {
   currPos = window.scrollY;
 });
 
-function toggleNavProjects() {
-  const projectsMenu = document.querySelector(".nav-projects-links");
-  const projectsYears = document.querySelector(".nav-years-text");
-  projectsMenu.classList.toggle("expand");
-  projectsYears.classList.toggle("expand");
-}
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-const projectsnav = document.querySelector('#projects');
-
-function toggleNavProjects(){
-  projectsnav.classList.add('showd');
-}
-
-function hidewNavd(){
-  projectsnav.classList.remove('showd');
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }
