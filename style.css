@@ -398,69 +398,14 @@ section {
     padding-bottom: 5rem;
 }
 
-.pictureinpictureboarder {
-    display: flex;
-    flex-direction: row;
-    gap: 49rem;
-}
-
-.nav-projects-bar {    
-    position: relative;
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: beige;
-    margin-left: 2rem;
-    width: auto;
-    height: auto;
-    padding: 0.5rem;
-    width: auto;
-    border-radius: 0.3rem;
-    z-index: 1029;
-}
-
-.nav-years-text {
-    margin-left: 1rem;
-    margin-top: 0.35rem;
-    cursor: pointer;    
-    flex: content;
-    flex-direction: row;
-}
-
-.nav-projects-links
-.nav-years-text {
-    position: relative;
-    overflow: hidden;
-    transform: all 0.3 ease-in-out;
-    cursor: pointer;
-}
-
-.nav-projects-links {
-    font-size: 1.1rem;
-    margin-left: 2rem;
-    text-align: left;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
-    width: auto;
-    height: auto;    
-    text-underline-offset: 0;
-    text-decoration-color: rgb(185, 185, 185);
-}
-
-.nav-projects-links:hover {
-    border: none;
-    text-decoration: none;
-}
-
-.nav-projects-links li {
-    list-style: none;
+.iframePinpBoarderProjects {
+    border: 0;
+    margin-top: 2rem;
 }
 
 .titleabriv {
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .section__abbreviations__pt {
@@ -491,24 +436,10 @@ section {
     display: flex;
 }
 
-.nav-projects-bar-text {
-    font-size: 2rem;
-    font-weight: 500;
-}
 
-.collapsible {
-    font-size: 1.5rem;
-    font-weight: 300;
-    transition: all 300ms ease;
-    margin-left: 1rem;
-    background: none;
-    border: none;    
-    cursor: pointer;
-}
 
-.picturesinpictures{
-    border: 10rem;
-}
+
+
 
 /* CONTACTS */
 
