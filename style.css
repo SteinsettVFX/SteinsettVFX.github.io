@@ -317,31 +317,11 @@ section {
     bottom: 2.5rem;
 }
 
-/* PLAYBACK */
-
-#showreel {
-    margin-top: 10rem;
-    margin-bottom: 8rem;
-    height: auto;
-    position: relative;
-}
-
-.videoShowReel {
-    margin-bottom: 10rem;
-}
-
-.heading{
-    margin-bottom: 1rem;
-}
-
-
 /* TIMELINE */
-
 
 .timeline {
    width: 90%;
    height: auto;
-   max-width: 80rem;
    margin: 0 auto;
    display: flex;
    flex-direction: column;
@@ -388,6 +368,24 @@ section {
   }
 }
 
+/* PLAYBACK */
+
+#showreel {
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    height: auto;
+    position: relative;
+    margin: 2rem;
+}
+
+.videoShowReel {
+    margin-bottom: 10rem;
+}
+
+.heading{
+    margin-bottom: 1rem;
+}
+
 /* PROJECTS */
 
 #projects {
@@ -396,6 +394,17 @@ section {
     height: auto;
     width: auto;
     margin: 0;
+}
+
+.nav-projects-sbar {
+    background-color: beige;
+    margin-right: 118rem;
+    margin-left: 2rem;
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    width: 7rem;
+    border-radius: 0.7rem;
 }
 
 /* CONTACTS */
