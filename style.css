@@ -326,6 +326,9 @@ section {
     position: relative;
 }
 
+.videoShowReel {
+    margin-bottom: 10rem;
+}
 
 .heading{
     margin-bottom: 1rem;
@@ -383,6 +386,16 @@ section {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+}
+
+/* PROJECTS */
+
+#projects {
+    background-color: rgb(147, 144, 170);
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0;
 }
 
 /* CONTACTS */

@@ -26,14 +26,14 @@ document.addEventListener('scroll', () => {
   currPos = window.scrollY;
 });
 
-const desktopnav = document.querySelector('#desktop-nav');
+const desktopnavd = document.querySelector('#desktop-nav');
 
 function showNavd(){
-    desktopnav.classList.add('showd');
+    desktopnavd.classList.add('showd');
 }
 
 function hidewNavd(){
-    desktopnav.classList.remove('showd');
+    desktopnavd.classList.remove('showd');
 }
 var currPos = window.scrollY;
 document.addEventListener('scroll', () => {
