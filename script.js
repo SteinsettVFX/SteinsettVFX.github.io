@@ -1,19 +1,4 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
 
-const hamburgernav = document.querySelector('#hamburger-nav');
-
-function showNav(){
-    hamburgernav.classList.add('show');
-}
-
-function hidewNav(){
-    hamburgernav.classList.remove('show');
-}
 var currPos = window.scrollY;
 document.addEventListener('scroll', () => {
   if (window.scrollY > currPos) {
@@ -26,23 +11,19 @@ document.addEventListener('scroll', () => {
   currPos = window.scrollY;
 });
 
-const desktopnavd = document.querySelector('#desktop-nav');
+function toggleNavProjects() {
+  const projectsMenu = document.querySelector(".nav-projects-links");
+  const projectsYears = document.querySelector(".nav-years-text");
+  projectsMenu.classList.toggle("expand");
+  projectsYears.classList.toggle("expand");
+}
 
-function showNavd(){
-    desktopnavd.classList.add('showd');
+const projectsnav = document.querySelector('#projects');
+
+function toggleNavProjects(){
+  projectsnav.classList.add('showd');
 }
 
 function hidewNavd(){
-    desktopnavd.classList.remove('showd');
+  projectsnav.classList.remove('showd');
 }
-var currPos = window.scrollY;
-document.addEventListener('scroll', () => {
-  if (window.scrollY > currPos) {
-  //scroll up
-    hidewNavd();
-  } else {
-  //scroll down
-    showNavd();
-  }
-  currPos = window.scrollY;
-});
