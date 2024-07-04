@@ -10,8 +10,11 @@
 }
 
 body {
+    height: auto;
+    width: 100vw;
     font-family: "Faustina", serif;
     background-color: black;
+    margin: 0rem;
 }
 
 html {
@@ -25,6 +28,8 @@ p {
 /* OVERLAY */
 
 #projects {
+    list-style: none;
+    text-decoration: none;
     position: relative;
     height: auto;
     width: auto;
@@ -34,12 +39,28 @@ p {
 }
 
 .pictureinpictureboarder {
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     gap: 49rem;
 }
 
-.nav-projects-bar {    
+.overview {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.overviewtext {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-projects-bar {   
+    text-decoration: none; 
     position: relative;
     display: inline-block;
     display: flex;
@@ -58,7 +79,7 @@ p {
 .nav-years-text {
     margin-left: 1rem;
     margin-top: 0.35rem;
-    cursor: pointer;    
+    cursor: pointer;
     flex: content;
     flex-direction: row;
 }
@@ -141,6 +162,42 @@ p {
     cursor: pointer;
 }
 
+
 .picturesinpictures{
     border: 10rem;
+}
+
+/* OVERVIEW */
+
+
+.overlaytric {
+   border: none;
+   display: flex;
+   gap: 4vmin;
+   position: absolute;
+   left: 20%;
+   top: 50%;
+   transform: translate(0%, 0%); 
+   user-select: none; /* -- Prevent image highlighting -- */
+}
+  
+#image-track > .overlaytric {
+    object-fit: cover;
+    object-position: 100% center;
+    border-bottom: 10rem;
+}
+
+.image {
+    width: 90vmin;
+    height: 106vmin;
+}
+
+.image {
+    border-radius: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    justify-content: center;
 }
