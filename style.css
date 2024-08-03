@@ -221,6 +221,14 @@ a:hover {
     text-align: center;
     font-size: 1.75rem;
     margin-bottom: 0rem;
+    color: white;
+}
+
+.section__text__p2 {
+    align-items: center;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 0rem;
     color: black;
 }
 
@@ -315,6 +323,7 @@ a:hover {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    color: white;
 }
 
 .about-containers,
@@ -386,7 +395,7 @@ a:hover {
   }
 }
 
-/* PLAYBACK */
+/* Showreel */
 
 #showreel {
     margin-top: 10rem;
@@ -407,7 +416,8 @@ a:hover {
 /* PROJECTS */
 
 #projects {
-    background-color: rgb(147, 144, 170);
+    list-style: none;
+    background-color: rgb(2, 27, 34);
     position: relative;
     height: auto;
     width: auto;
@@ -426,9 +436,30 @@ a:hover {
 }
 
 .section__abbreviations__pt {
-    color: black;
+    color: white;
     text-align: center;
     font-size: 2rem;
+}
+
+#section1 {
+    color: white;
+}
+
+#section2 {
+    color: white;
+}
+
+#section3 {
+    color: white;
+}
+
+#section4 {
+    color: white;
+}
+
+.nav-years{
+    display: flex;
+    flex-direction: column;
 }
 
 .abbreviations_container {
@@ -438,6 +469,7 @@ a:hover {
     margin: 0;
     gap: 0.2rem;
     justify-content: center;
+    color: white;
 }
 
 .top_abbreviations_container {
@@ -454,10 +486,86 @@ a:hover {
     display: flex;
 }
 
+.pictureinpictureboarder {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 49rem;
+}
 
+.overview {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
+.projects-contents{
+    margin-top: 2rem;
+    display: flex;
+}
 
+.dropdowntest1{
+    margin-left: 50rem;
+}
 
+.projects-dropdown-contents{
+    background-color: #c71111;
+    margin-left: 0rem;
+    width: 100rem;
+}
+
+.overviewtext {
+    margin-left: 7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-projects-bar {   
+    list-style: none;
+    text-decoration: none; 
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(2, 37, 54);
+    margin-left: -0.5rem;
+    height: 100%;
+    padding: 0.5rem;
+    width: 25rem;
+    z-index: 1029;
+}
+
+.nav-projects-links li {
+    list-style: none;
+    position: sticky;
+    margin-left: 5rem;
+}
+
+.collapsible {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: all 300ms ease;
+    background: none;
+    border: none;    
+    cursor: pointer;
+    color: white;
+}
+
+.nav-projects-links {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    width: auto;
+    height: auto;    
+    text-underline-offset: 0;
+    text-decoration-color: rgb(185, 185, 185);
+}
 
 /* CONTACTS */
 
