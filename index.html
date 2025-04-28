@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,86 +9,58 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
+
 <body>
     <class id="desktop-nav">
         <div class="logo"> </div>
-        <div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#showreel">Showreels</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#contacts">Contacts</a></li>
         </ul>
         </div>
     </class>
-    <nav id="hamburger-nav">
-        <div class="logo"> Viljam Steinsett Strøm</div>
-        <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#showreel" onclick="toggleMenu()">Showreel</a></li>
-            <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
-        </div>
-       </div>
-    </nav>
+    <section id="Disclamer">
+        <h1 class="Disclamer1">| Please view the website in landscape, otherwise some text/graphics might be outside of
+            the screen |</h1>
+        <h1 class="Disclamer1">The website was programmed from scratch without the use of LLM/AI assistance as a
+            training excersice.</h1>
+    </section>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic1.png">
+            <img src="/assets/Untitled-1.png">
         </div>
         <div class="section__text">
-            <p class="section__text__p1"> Hello, I'm</p>
-            <h1 class="title">Viljam Steinsett Strøm</h1>
-            <p class="section__text__pt">Compositor</p>
             <div class="btn-container">
-                <button
-                class="btn btn-color-1"
-                onclick="window.open('./assets/CV_Viljam_Steinsett_Stroem_Junior_Compositor_27052024_v004.pdf')">
-                Download CV
-            </button>
-                <button
-                class="btn btn-color-1"
-                onclick="location.href='./#contacts'">
-                Contact info
-            </button>
+                <div class="abbreviations_container">
+                    <button class="btn btn-color-1"
+                        onclick="window.open('./assets/CV_Viljam_Steinsett_Stroem_Junior_Compositor_27052024_v004.pdf')">
+                        Download CV
+                        <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+                            Contact info
+                            <button class="btn-1 btn-color-1"
+                                onclick="window.open('https://www.linkedin.com/in/viljam-ss/')">
+                                LinkedIn
+                            </button>
+                            <button class="btn-1 btn-color-1" onclick="window.open('https://github.com/SteinsettVFX')">
+                                Github
+                </div>
             </div>
-             <div
-                class="btn-container-1">
-                <button
-                class="btn-1 btn-color-1"
-                onclick="window.open('https://www.linkedin.com/in/viljam-ss/')">
-                LinkedIn
-                </button>
-                <button
-                class="btn-1 btn-color-1"
-                onclick="window.open('https://github.com/SteinsettVFX')">
-                Github
-        </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get to know more</p>
-        <h1 class="title">About Me</h1>
+        <p class="section__text__p1">Me and My</p>
+        <h1 class="title">History</h1>
         <div class="section__container">
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/Experience1.png" alt="Experience icon"
-                        class="icon"
-                        >
+                        <img src="./assets/Experience1.png" alt="Experience icon" class="icon">
                         <h3>Experience</h3>
                         <p>5+ years <br> of compositing</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/Education1.png" alt="Education icon"
-                        class="icon"
-                        >
+                        <img src="./assets/Education1.png" alt="Education icon" class="icon">
                         <h3>Education</h3>
                         <p>B.Sc (Hons) bachelors Degree <br> University of Bolton</p>
                     </div>
@@ -97,131 +70,109 @@
                     <p>HI, I am from Sandefjord. Norway, and study in the UK. I love tinkering with programs
                         and computers. I enjoy both technical and artistic approaches to solving a challenge. Big
                         fan of LOTR, drones, computers, and mountain hiking!
-                        </p>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="timeline">
-        
+
             <!--Well, The reason for this div is to fill space. 
   This space is technically used for keeping dates, 
   but I didn't find the need for dates. However, I'll provide 
   you the styling for dates, so that you can use it if you 
   wanted to.-->
-                    <div class="timeline-empty">
-                    </div>
-  
-  <!--This is the class where the timeline graphics are 
+            <div class="timeline-empty">
+            </div>
+
+            <!--This is the class where the timeline graphics are 
   housed in. Note that we have timeline-circle 
   here for that pointer in timeline.-->
-  
-                 <div class="timeline-middle">
-                     <div class="timeline-circle"></div>
-                 </div>
-                 <div class="timeline-component timeline-content">
-                  <h3>2003, <br> Birth</h3>
-                  <p>Some Text</p>
-             </div>
-                 <div class="timeline-component timeline-content">
-                           <h3>2016-2019, <br> Secondary school, <br> SOS Barnebyer</h3>
-                           <p>Together with the school administration i helped lead and host events that ran over 3 years gathering approximate value of 32 000 GBP.</p>
-                           <button
-                           class="btn1 btn-color-1"
-                           onclick="window.open('https://www.sb.no/nyheter/bugarden-ungdomskole/barn-og-unge/vi-gjor-det-for-a-hjelpe-andre-barn/s/5-73-343639')">
-                           News article
-                  </div>
-                  <div class="timeline-middle">
-                      <div class="timeline-circle"></div>
-                  </div>
-                  <div class="timeline-empty">
-                  </div>
-                  <div class="timeline-empty">
-                  </div> 
-                 <div class="timeline-middle">
-                     <div class="timeline-circle"></div>
-                 </div>
-                 <div class=" timeline-component timeline-content">
-                  <h3>2016-2022, <br> Rema 1000, <br> employee</h3>
-                  <p>Some Text.</p>
-                </div>
+
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>2003, <br> Birth</h3>
+                <p>I was born and raised in Norway, Sandefjord. Growing up on a farm near cows, and other live animals
+                    as well as cultivating farmlands. Frequent trips to the mountains with skeeing and mounteneering,
+                    where i learned to enjoy the outdoors.</p>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>2016-2019, <br> Secondary school, <br> SOS Barnebyer</h3>
+                <p>Together with the school administration i helped lead and host events that ran over 3 years gathering
+                    approximate value of 32 000 GBP.</p>
+                <button class="btn1 btn-color-1"
+                    onclick="window.open('https://www.sb.no/nyheter/bugarden-ungdomskole/barn-og-unge/vi-gjor-det-for-a-hjelpe-andre-barn/s/5-73-343639')">
+                    News article
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+            <div class="timeline-empty">
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class=" timeline-component timeline-content">
+                <h3>2016-2022, <br> Rema 1000, <br> employee</h3>
+                <p>As an employee at Rema 1000 Pindsle, I would start the workday by planning the day’s work alongside
+                    the other senior employees and made sure the team would always complete the work at the end of the
+                    day. I was responsible for training new employees and maintaining equipment.</p>
+            </div>
             <div>
                 <div class="timeline-component timeline-content">
                     <h3>2019-2022, <br> Highschool, <br> Student council president</h3>
-                    <p>Some Text.</p>                <button
-                class="btn1 btn-color-1"
-                onclick="window.open('https://www.sb.no/nyheter/bugarden-ungdomskole/barn-og-unge/vi-gjor-det-for-a-hjelpe-andre-barn/s/5-73-343639')">
-                News article
+                    <p>As president of the student council at Norway’s largest high school, I worked as a cog of a large
+                        machine. Timing projects and delivering on deadlines, discussing progress, and presenting it to
+                        a large audience was a weekly occurrence.</p> <button class="btn1 btn-color-1"
+                        onclick="window.open('https://www.sb.no/pandemien-tarer-pa-svgs-elevene-akkurat-na-hater-jeg-hjemmeskole/s/5-73-1266912')">
+                        News article
                 </div>
             </div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-empty">
-                </div>
-                <div class="timeline-empty">
-                </div> 
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class=" timeline-component timeline-content">
-                 <h3>Javascript</h3>
-                 <p>Some Text.</p>
-               </div>
-                 <!--This is one block 1-->
-               <div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+            <div class="timeline-empty">
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>2022-2025 <br> University of Greater Manchester, <br> Visual Effects and Animation
+                    BSc (Hons) W621</h3>
+                <p>I will graduate from the Uinversity of Greater Manchester, previously known as University of Bolton,
+                    during the spring of 2025. I will Graduate with a bachelors of science with honors in visual effects
+                    and animation.</p>
+                <button class="btn1 btn-color-1"
+                    onclick="window.open('./assets/CV_Viljam_Steinsett_Stroem_Junior_Compositor_27052024_v004.pdf')">
+                    Grades and Certificate
+            </div>
+            <!--This is one block 1-->
+            <div>
                 <div class="timeline-component timeline-content">
-                <h3>2016-2019 <br> Secondary school, <br> SOS Barnebyer</h3>
-                <p>Together with the school administration i helped lead and host events that ran over 3 years gathering approximate value of 32 000 GBP.</p>
-                <button
-                class="btn1 btn-color-1"
-                onclick="window.open('https://www.sb.no/nyheter/bugarden-ungdomskole/barn-og-unge/vi-gjor-det-for-a-hjelpe-andre-barn/s/5-73-343639')">
-                News article
+                    <h3>2024-2025 <br> The Forever Zone, Atomic<br> VFX Supervisor</h3>
+                    <p>On the short film i worked as both onset VFX supervisor and post VFX supervisor. In addition to
+                        working with a team of 7. Filmed 17 sequences of indoor, outdoors and studio conditions, both
+                        rain and bright direct sunlight. The team delivered 23 sequences of which i was personally
+                        responsible for 8 sequences as well as monolith assets. </p>
+                    <button class="btn1 btn-color-1"
+                        onclick="window.open('https://www.imdb.com/title/tt35434753/fullcredits/?ref_=tt_cst_sm')">
+                        IMDB
                 </div>
             </div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-empty">
-                </div>
-                <div class="timeline-empty">
-                </div> 
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class=" timeline-component timeline-content">
-                 <h3>Javascript</h3>
-                 <p>Some Text.</p>
-               </div>
-                <!--This is one block 2-->
-                <div>
-                    <div class="timeline-component timeline-content">
-                    <h3>2016-2019 <br> Secondary school, <br> SOS Barnebyer</h3>
-                    <p>Together with the school administration i helped lead and host events that ran over 3 years gathering approximate value of 32 000 GBP.</p>
-                    <button
-                    class="btn1 btn-color-1"
-                    onclick="window.open('https://www.sb.no/nyheter/bugarden-ungdomskole/barn-og-unge/vi-gjor-det-for-a-hjelpe-andre-barn/s/5-73-343639')">
-                    News article
-                    </div>
-                </div>
-                    <div class="timeline-middle">
-                        <div class="timeline-circle"></div>
-                    </div>
-                    <div class="timeline-empty">
-                    </div>
-                    <div class="timeline-empty">
-                    </div> 
-                    <div class="timeline-middle">
-                        <div class="timeline-circle"></div>
-                    </div>
-                    <div class=" timeline-component timeline-content">
-                     <h3>Javascript</h3>
-                     <p>Some Text.</p>
-                   </div>
-         </div> 
-         <img src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="smallicon arrow"
-            onclick="location.href='./#showreel'">
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+            <div class="timeline-empty">
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="smallicon arrow" onclick="location.href='./#showreel'">
     </section>
     <section id="skills">
         <div class="title"> </div>
@@ -229,16 +180,24 @@
         <div>
             <div class="top_contacts_container1">
                 <div class="contacts_container1">
+                    <h3 class="text2">Confidence:</h3>
+                    <p class="text2">1-6</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="top_contacts_container1">
+                <div class="contacts_container1">
                     <h3 class="text2">Nuke:</h3>
                     <p class="text2">6</p>
                 </div>
                 <div class="contacts_container1">
-                    <h3 class="text2">Paintout:</h3>
-                    <p class="text2">3</p>
+                    <h3 class="text2">paintout:</h3>
+                    <p class="text2">5</p>
                 </div>
                 <div class="contacts_container1">
                     <h3 class="text2">3d integartion:</h3>
-                    <p class="text2">3</p>
+                    <p class="text2">4</p>
                 </div>
                 <div class="contacts_container1">
                     <h3 class="text2">camera recration:</h3>
@@ -249,8 +208,12 @@
         <div>
             <div class="top_contacts_container1">
                 <div class="contacts_container1">
+                    <h3 class="text2">Programming:</h3>
+                    <p class="text2">5</p>
+                </div>
+                <div class="contacts_container1">
                     <h3 class="text2">Vex:</h3>
-                    <p class="text2">3</p>
+                    <p class="text2">5</p>
                 </div>
                 <div class="contacts_container1">
                     <h3 class="text2">Python:</h3>
@@ -258,7 +221,7 @@
                 </div>
                 <div class="contacts_container1">
                     <h3 class="text2">Mel:</h3>
-                    <p class="text2">3</p>
+                    <p class="text2">2</p>
                 </div>
                 <div class="contacts_container1">
                     <h3 class="text2">Hscript:</h3>
@@ -273,15 +236,23 @@
                     <p class="text2">6</p>
                 </div>
                 <div class="contacts_container1">
-                    <h3 class="text2">pop_sim:</h3>
+                    <h3 class="text2">Pop_sim:</h3>
+                    <p class="text2">4</p>
+                </div>
+                <div class="contacts_container1">
+                    <h3 class="text2">Rigid_body_sim:</h3>
+                    <p class="text2">4</p>
+                </div>
+                <div class="contacts_container1">
+                    <h3 class="text2">Pyro/flip_sim:</h3>
+                    <p class="text2">2</p>
+                </div>
+                <div class="contacts_container1">
+                    <h3 class="text2">Vellum:</h3>
                     <p class="text2">6</p>
                 </div>
                 <div class="contacts_container1">
-                    <h3 class="text2">rigid_body:</h3>
-                    <p class="text2">6</p>
-                </div>
-                <div class="contacts_container1">
-                    <h3 class="text2">pyro:</h3>
+                    <h3 class="text2">Procedural modeling:</h3>
                     <p class="text2">6</p>
                 </div>
             </div>
@@ -290,19 +261,23 @@
             <div class="top_contacts_container1">
                 <div class="contacts_container1">
                     <h3 class="text2">3dequalizer:</h3>
-                    <p class="text2">6</p>
+                    <p class="text2">4</p>
                 </div>
                 <div class="contacts_container1">
-                    <h3 class="text2">matchmove:</h3>
+                    <h3 class="text2">Matchmove:</h3>
                     <p class="text2">3</p>
                 </div>
                 <div class="contacts_container1">
-                    <h3 class="text2">Geo_lineup:</h3>
-                    <p class="text2">6</p>
+                    <h3 class="text2">Geo_Lineup:</h3>
+                    <p class="text2">4</p>
                 </div>
                 <div class="contacts_container1">
-                    <h3 class="text2">mocap:</h3>
-                    <p class="text2">6</p>
+                    <h3 class="text2">Mocap:</h3>
+                    <p class="text2">4</p>
+                </div>
+                <div class="contacts_container1">
+                    <h3 class="text2">Rotomation:</h3>
+                    <p class="text2">4</p>
                 </div>
             </div>
         </div>
@@ -325,16 +300,23 @@
         <div>
             <div class="top_contacts_container1">
                 <div class="contacts_container1">
-                    <h3 class="text2">Mari:</h3>
-                    <p class="text2">6</p>
+                    <h3 class="text2">General:</h3>
                 </div>
                 <div class="contacts_container1">
                     <h3 class="text2">Texturing:</h3>
-                    <p class="text2">6</p>
+                    <p class="text2">2</p>
                 </div>
                 <div class="contacts_container1">
-                    <h3 class="text2">Procedurals:</h3>
-                    <p class="text2">6</p>
+                    <h3 class="text2">LookDev:</h3>
+                    <p class="text2">5</p>
+                </div>
+                <div class="contacts_container1">
+                    <h3 class="text2">Lighting:</h3>
+                    <p class="text2">5</p>
+                </div>
+                <div class="contacts_container1">
+                    <h3 class="text2">USD:</h3>
+                    <p class="text2">5</p>
                 </div>
             </div>
         </div>
@@ -342,213 +324,95 @@
     <section id="showreel">
         <p class="section__text__pt heading">Showreels</p>
         <div class="videoShowReel">
-            <div class="container1">
+            <div class="container">
                 <nav>
-                  <ul>
-                    <div class="top_abbreviations_container">
-                        <div class="abbreviations_container">
-                            <li><a href="#section1">Compositing</a></li>
+                    <ul>
+                        <div class="top_abbreviations_container">
+                            <div class="abbreviations_container">
+                                <li><a href="#section1">Compositing</a></li>
+                            </div>
+                            <div class="abbreviations_container">
+                                <li><a href="#section2">FX</a></li>
+                            </div>
                         </div>
-                        <div class="abbreviations_container">
-                            <li><a href="#section2">FX</a></li>
-                        </div>
-                        <div class="abbreviations_container">
-                            <li><a href="#section3">Programming</a></li>
-                        </div>
-                        <div class="abbreviations_container">
-                            <li><a href="#section4">Supervisor</a></li>
-                        </div>
-                    </div>
-                  </ul>
+                    </ul>
                 </nav>
                 <div class="contentholder">
-                  <div class="section active" id="section1">
-                    <div class="content">
-                        <p class="section__text__pt heading">Compositing</p>
-                        <div class="aspect-ratio">
-                            <iframe src="https://www.youtube.com/embed/uujR5Jjitdg?&mute=1" width="550" height="275" frameborder="0" allow="fullscreen"></iframe>
-                          </div>
-            
-                          <style>
-                          /* This element defines the size the iframe will take.
+                    <div class="section active" id="section1">
+                        <div class="content">
+                            <p class="section__text__pt heading">Compositing</p>
+                            <div class="aspect-ratio">
+                                <iframe
+                                    src="https://player.vimeo.com/video/1079468493?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                    frameborder="0"
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                    width="550" height="275" frameborder="0" allow="fullscreen"></iframe>
+                            </div>
+
+                            <style>
+                                /* This element defines the size the iframe will take.
                              In this example we want to have a ratio of 25:14 */
-                          .aspect-ratio {
-                            position: relative;
-                            width: 100%;
-                            height: 0;
-                            padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
-                          }
-                          
-                          /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
-                          .aspect-ratio iframe {
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            left: 0;
-                            top: 0;
-                          }
-                          </style>
-                          <p4 class="section__text__p3">Supervisor</p4>                    
+                                .aspect-ratio {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 0;
+                                    padding-bottom: 56.25%;
+                                    /* The height of the item will now be 56.25% of the width. */
+                                }
+
+                                /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+                                .aspect-ratio iframe {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    left: 0;
+                                    top: 0;
+                                }
+                            </style>
+                            <p4 class="section__text__p3">My Compositing exkperience comes from Personal projects from
+                                UOB and working on the short film "The Forever Zone
+                                2024-25 (ATMOIC)." </p4>
                         </div>
-                  </div>
-                  <div class="section" id="section2">
-                     <div class="content"><p>
-                        <p class="section__text__pt heading">FX</p>
-                        <div class="aspect-ratio">
-                            <iframe src="https://www.youtube.com/embed/uujR5Jjitdg?&mute=1" width="550" height="275" frameborder="0" allow="fullscreen"></iframe>
-                          </div>
-            
-                          <style>
-                          /* This element defines the size the iframe will take.
-                             In this example we want to have a ratio of 25:14 */
-                          .aspect-ratio {
-                            position: relative;
-                            width: 100%;
-                            height: 0;
-                            padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
-                          }
-                          
-                          /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
-                          .aspect-ratio iframe {
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            left: 0;
-                            top: 0;
-                          }
-                          </style>
-                          <p4 class="section__text__p3">Supervisor</p4>                    
-                        </div>              
-                  </div>
-                  <div class="section" id="section3">
-                     <div class="content"><p>
-                        <p class="section__text__pt heading">Programming</p>
-                        <div class="aspect-ratio">
-                            <iframe src="https://www.youtube.com/embed/uujR5Jjitdg?&mute=1" width="550" height="275" frameborder="0" allow="fullscreen"></iframe>
-                          </div>
-            
-                          <style>
-                          /* This element defines the size the iframe will take.
-                             In this example we want to have a ratio of 25:14 */
-                          .aspect-ratio {
-                            position: relative;
-                            width: 100%;
-                            height: 0;
-                            padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
-                          }
-                          
-                          /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
-                          .aspect-ratio iframe {
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            left: 0;
-                            top: 0;
-                          }
-                          </style>
-                          <p4 class="section__text__p3">HI, I am from Sandefjord. Norway, and study in the UK. I love tinkering with programs
-                            and computers. I enjoy both technical and artistic approaches to solving a challenge. Big
-                            fan of LOTR, drones, computers, and mountain hiking!</p4>                    
-                        </div>               
-                  </div>
-                  <div class="section" id="section4">
-                     <div class="content"><p>
-                        <p class="section__text__pt heading">Supervisor</p>
-                        <div class="aspect-ratio">
-                            <iframe src="https://www.youtube.com/embed/uujR5Jjitdg?&mute=1" frameborder="0" allow="fullscreen"></iframe>
-                          </div>
-            
-                          <style>
-                          /* This element defines the size the iframe will take.
-                             In this example we want to have a ratio of 25:14 */
-                          .aspect-ratio {
-                            position: relative;
-                            padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
-                          }
-                          
-                          /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
-                          .aspect-ratio iframe {
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            left: 0;
-                            top: 0;
-                          }
-                          </style>
-                          <p4 class="section__text__p3">Supervisor</p4>                    
-                        </div>                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="title">Projects</div>
-            <div class="projects-contents">
-                <div class="nav-projects-bar">
-                    <p class="nav-projects-bar-text"></p>
-                    <div class="overview">
-                    <li><a class="overviewtext" >Projects:</a></li>
                     </div>
-                    <div class="nav-years">
-                            <button type="button" class="collapsible">2023:</button>
-                            <div class="content">
-                                <ul class="nav-projects-links">
-                                    <li><a class="overviewtext" href="#Laceration">C-Laceration</a></li>
-                                    <li><a class="overviewtext" href="#Rubix">C-Rubix</a></li>
-                                    <li><a class="overviewtext" href="#Workshop">M-T-Workshop</a></li>
-                                </ul>
+                    <div class="section" id="section2">
+                        <div class="content">
+                            <p>
+                            <p class="section__text__pt heading">FX</p>
+                            <div class="aspect-ratio">
+                                <iframe
+                                    src="https://player.vimeo.com/video/1079468600?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                    width="550" height="275" frameborder="0" allow="fullscreen"></iframe>
                             </div>
-                                <button type="button" class="collapsible">2024:</button>
-                                <div class="content">
-                                    <ul class="nav-projects-links">
-                                        <li><a class="overviewtext" href="#Ice">FX-Ice</a></li>
-                                        <li><a class="overviewtext" href="#Growth">P-Growth</a></li>
-                                        <li><a class="overviewtext" href="#grandLib">S-grandLib</a></li>
-                                    </ul>
-                                </div>
-                            <button type="button" class="collapsible">2025:</button>
-                            <div class="content">
-                                <ul class="nav-projects-links">
-                                    <li><a class="overviewtext" href="#Ice">FX-Ice</a></li>
-                                    <li><a class="overviewtext" href="#Growth">P-Growth</a></li>
-                                    <li><a class="overviewtext" href="#grandLib">S-grandLib</a></li>
-                                </ul>
-                            </div>
+
+                            <style>
+                                /* This element defines the size the iframe will take.
+                             In this example we want to have a ratio of 25:14 */
+                                .aspect-ratio {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 0;
+                                    padding-bottom: 56.25%;
+                                    /* The height of the item will now be 56.25% of the width. */
+                                }
+
+                                /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+                                .aspect-ratio iframe {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    left: 0;
+                                    top: 0;
+                                }
+                            </style>
+                            <p4 class="section__text__p3">This demonstration is an overview of my varied skillset within
+                                houdini, it covers programming tools, and publishing HDA assets as well as fully
+                                composited shots rendered within a MTLX and USD pipelien with Karma in Houdini.</p4>
+                        </div>
                     </div>
                 </div>
-                <div class="projects-dropdown-contents"> <p>papi</p>
-                    <div class="dropdowntest1"><p>papi</p></div>
-                </div>
             </div>
-        <div class="titleabriv">
-        <p class="section__abbreviations__pt">abbreviations:</p>
         </div>
-        <div class="top_abbreviations_container">
-            <div class="abbreviations_container">
-                <h>C:</h>
-                <p>Compositing</p>
-            </div>
-            <div class="abbreviations_container">
-                <h>M:</h>
-                <p>Modelling</p>
-            </div>
-            <div class="abbreviations_container">
-                <h>T:</h>
-                <p>Texturing</p>
-            </div>
-            <div class="abbreviations_container">
-                <h>FX:</h>
-                <p>Effects</p>
-            </div>
-            <div class="abbreviations_container">
-                <h>P:</h>
-                <p>Programming</p>
-            </div>
-            <div class="abbreviations_container">
-                <h>S:</h>
-                <p>Supervisor</p>
-            </div>
+        </div>
         </div>
     </section>
     <section id="contacts">
@@ -556,16 +420,15 @@
         <p class="section__text__p1">Contacts:</p>
         <div class="top_contacts_container">
             <div class="contacts_container">
-                <img src="./assets/AdobeStock_703602052.png" alt="Experience icon"
-                class="contactsicons"
-                >
-                <h3 class="text2"> Phone Number:</h3>
-                <p class="text2">+47 95893392</p>
+                <img src="./assets/AdobeStock_703602052.png" alt="Experience icon" class="contactsicons">
+                <h3 class="text2"> Phone Number: </h3>
+                <div>
+                    <p class="text2">UK 0772 7341754
+                    <p class="text2">NO +47 95893392
+                </div>
             </div>
             <div class="contacts_container">
-                <img src="./assets/AdobeStock_473803982.png" alt="Education icon"
-                class="contactsicons"
-                >
+                <img src="./assets/AdobeStock_473803982.png" alt="Education icon" class="contactsicons">
                 <h3 class="text2">Email:</h3>
                 <p class="text2">SteinsettVFX@gmail.com</p>
             </div>
@@ -573,4 +436,5 @@
     </section>
     <script src="script.js"></script>
 </body>
+
 </html>
